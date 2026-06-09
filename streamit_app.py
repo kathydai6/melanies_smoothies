@@ -43,3 +43,6 @@ if st.button('Submit Changes'):
                      (og_dataset['ORDER_UID'] == edited_dataset['ORDER_UID']),
                      [when_matched().update({'ORDER_FILLED': edited_dataset['ORDER_FILLED']})])
     st.success('Order(s) updated!', icon="✅")
+import requests  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
